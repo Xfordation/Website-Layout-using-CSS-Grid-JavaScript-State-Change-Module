@@ -1,0 +1,43 @@
+/* Ipad */
+/* NavBar */
+.main-nav .social-icons {
+  display: none;
+}
+.main-nav .container {
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+.main-nav ul,
+.main-nav .container .logo {
+  justify-self: center;
+}
+.main-nav ul li a {
+  padding: 0.5rem;
+}
+/* Aricle Home-Page */
+.article-home .article-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+.article-home .article-container article:first-child,
+.article-home .article-container article:last-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+/* SmartPhone(IphoneX/7,6plus) */
+@media (max-width: 610px) {
+  /* Showcase */
+  .showcase .showcase-container,
+  .article-home .article-container,
+  .footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer .copy {
+    grid-column: 1;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container > *:first-child {
+    grid-row: 1;
+  }
+}
